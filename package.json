@@ -1,6 +1,7 @@
 {
     "name": "cs32-sprint3",
     "version": "22.2.0",
+    "homepage": "https://gitname.github.io/cs32-sprint3-mock-deployed",
     "description": "Brown CSCI0320 Sprint 3",
     "license": "UNLICENSED",
     "dependencies": {
@@ -27,6 +28,8 @@
     },
     "type": "module",
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "vite",
         "build": "vite build",
         "serve": "vite preview"
